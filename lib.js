@@ -3,8 +3,8 @@ class BulletSystem {
     this.bullets = [];
   }
   update() {
-    // 每 4 個回合塞一顆子彈
-    if (game.circle % 4 === 0) {
+    // 每 10 個回合塞一顆子彈
+    if (game.circle % 10 === 0) {
       this.bullets.push(new Bullet());
     }
     // 更新
