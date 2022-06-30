@@ -66,7 +66,7 @@ function startGame() {
   document.addEventListener("keydown", keydown);
   document.addEventListener("keyup", keyup);
   // 啟動遊戲
-  game.id = window.setInterval(refreashGame, 10);
+  game.id = window.setInterval(refreshGame, 10);
 }
 
 function keydown(e) {
@@ -108,7 +108,7 @@ function keyup(e) {
   }
 }
 
-function refreashGame() {
+function refreshGame() {
   for (let i = 0; i < game.particles.length; i++) {
     if (game.particles[i].update()) {
       game.particles.splice(i, 1);
